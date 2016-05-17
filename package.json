@@ -1,9 +1,9 @@
 {
   "name": "angular2-seed",
   "version": "0.0.0",
-  "description": "Modular seed project for Angular 2 apps with fast, statically typed build",
+  "description": "Angular 2 demo app, integrating Firebase and bootstrap.",
   "repository": {
-    "url": "https://github.com/mgechev/angular2-seed"
+    "url": "https://github.com/GonzOne/angular2-sensor-app.git"
   },
   "scripts": {
     "build.dev": "gulp build.dev --color",
