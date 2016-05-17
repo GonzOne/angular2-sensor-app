@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="alert-module"><!-- form error alerts -->
+        <div class="col-md-9 col-md-offset-3">
+            <alert
+            *ngFor="let alert of alerts;let i = index" [type]="alert.type" dismissible="true" (close)="closeAlert(i)">
+            {{ alert?.msg }}
+            </alert>
+        </div>
+    </div> <!-- end of form error alerts-->
+    <div class="row" *ngIf="formError">
+    <div class="col-md-12">
+        <div class="button-reset">
+            <button class="btn btn-primary" (click)="tryAgain($event)" >Try Again</button>
+        </div>
+    </div>
+</div>
+<div class="row" *ngIf="!formSubmitted" ><!-- contact form -->
+<div class="col-md-12">
+    <div class="form-area">
+        <h2>Drop me a line.</h2>
+
+        <p>Share your ideas or let me know what you are making with this app.</p>
+        <form role="form" [ngFormModel]="contactForm" (submit)="sendEmail($event)" novalidate>
+        <div class="form-group">
+            <input type="text" ngControl="name" class="form-control" id="name" name="name" placeholder="Name" #name="ngForm" required>
+            <div [hidden]="name.valid || name.pristine" class="text-warning" >(required)</div>
+    </div>
+
+    <div class="form-group">
+        <input type="email" ngControl="email" class="form-control" id="email" name="email" placeholder="Email" #email="ngForm" required>
+        <div [hidden]="email.valid || email.pristine" class="text-warning" >(required)</div>
+</div>
+
+<div class="form-group">
+    <input type="text" ngControl="subject" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+</div>
+
+<div class="form-group">
+    <textarea class="form-control" ngControl="message" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7" #message="ngForm" required></textarea>
+    <div [hidden]="message.valid || message.pristine" class="text-warning" >(required</div>
+</div>
+
+<button type="submit" id="submit" name="submit" [disabled]="!contactForm.valid" class="btn btn-primary pull-right">Submit Form</button>
+</form>
+</div>
+</div>
+</div><!-- end of contact form -->
+</div>

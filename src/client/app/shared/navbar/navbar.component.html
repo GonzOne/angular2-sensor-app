@@ -1,0 +1,37 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" *ngIf="isLoggedIn">
+<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="pull-left">
+            <img src="assets/images/cc_logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="collapse navbar-collapse" [collapse]="isCollapsed">
+    <ul class="nav navbar-nav">
+        <li>
+            <a [routerLink]="['/sensor']" class="btn btn-link" (click)="isCollapsed = !isCollapsed" >Sensor</a>
+        </li>
+        <li>
+            <a [routerLink]="['/about']" class="btn btn-link" (click)="isCollapsed = !isCollapsed">About</a>
+        </li>
+        <li>
+            <a [routerLink]="['/contact']" class="btn btn-link" (click)="isCollapsed = !isCollapsed">Contact</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="btn btn-link" (click)="logout($event)">
+            <i class="glyphicon glyphicon-off"></i>
+            </a>
+        </li>
+    </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</div>
