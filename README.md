@@ -15,6 +15,10 @@ git clone --depth 1 https://github.com/GonzOne/angular2-sensor-app.git
 cd sensor-app
 # install the project's dependencies
 npm install
+
+#add the slate styling
+Download the slate (http://bootswatch.com/slate/bootstrap.min.css) and place it in the node_modules/bootstrap/dist/css folder.
+
 # watches your files and uses livereload by default
 npm start
 # api document for the app
