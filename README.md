@@ -1,5 +1,5 @@
 # Introduction
-CodingColor sensor app demo, using Angular 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
+[CodingColor](http://www.codingcolor.com) IOT sensor app demo, built with Angular 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
 
 check it out @ [Demo application](http://www.stheory.com/linino/)
 ```bash
@@ -23,13 +23,26 @@ cd sensor-app
 npm install
 
 #add the slate styling
-Download the slate (http://bootswatch.com/slate/bootstrap.min.css) and place it in the node_modules/bootstrap/dist/css folder.
+Download the slate (http://bootswatch.com/slate/bootstrap.min.css) styling and replace the default
+bootstrap version @ node_modules/bootstrap/dist/css folder.
 
 #create a Firebase account
 [Firebase](https://firebase.google.com/)
 
 #add your firebase path
 Revise the path to your defaultFirebase account in the main.ts file
+
+bootstrap(AppComponent, [
+  ROUTER_PROVIDERS,
+  provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' }),
+  FIREBASE_PROVIDERS,
+  GlobalVarService,
+  defaultFirebase('https://your.firebaseio.com/'),
+  firebaseAuthConfig({
+     provider: AuthProviders.Password,
+     method: AuthMethods.Password,
+  })
+]);
 
 # watches your files and uses livereload by default
 npm start
