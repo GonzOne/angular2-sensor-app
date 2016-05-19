@@ -25,7 +25,7 @@ bootstrap(AppComponent, [
   provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' }),
   FIREBASE_PROVIDERS,
   GlobalVarService,
-  defaultFirebase('https://linino-dev.firebaseio.com/'),
+  defaultFirebase('https://your-path.firebaseio.com/'),
   firebaseAuthConfig({
      provider: AuthProviders.Password,
      method: AuthMethods.Password,
