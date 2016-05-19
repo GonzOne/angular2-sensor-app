@@ -1,10 +1,11 @@
 # Introduction
-CodingColor sensor app demo, using Angualr 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
+CodingColor sensor app demo, using Angular 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
 
-[Demo application](http://www.stheory.com/linino/)
-
+check it out @ [Demo application](http://www.stheory.com/linino/)
+```bash
 email - linino_test@gmail.com
 pass - linino1234
+```
 
 Cloned from the Angular2-seed project, for more info Visit the [Wiki page](https://github.com/mgechev/angular2-seed/wiki) of the project.
 
