@@ -1,11 +1,16 @@
 # Introduction
-CodingColor sensor app demo, using Angualr 2, Firebase and an Linino One (Arduino Yun).
+CodingColor sensor app demo, using Angualr 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
 
-Started from the Angualr2-seed for more info Visit the [Wiki page](https://github.com/mgechev/angular2-seed/wiki) of the project.
+[Demo application](http://www.stheory.com/linino/)
+
+email - linino_test@gmail.com
+pass - linino1234
+
+Cloned from the Angular2-seed project, for more info Visit the [Wiki page](https://github.com/mgechev/angular2-seed/wiki) of the project.
 
 # How to start
 
-**Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
+**Note** This seed project requires node v4.x.x or higher and npm 2.14.7.
 
 In order to start the seed use:
 
@@ -18,6 +23,12 @@ npm install
 
 #add the slate styling
 Download the slate (http://bootswatch.com/slate/bootstrap.min.css) and place it in the node_modules/bootstrap/dist/css folder.
+
+#create a Firebase account
+[Firebase](https://firebase.google.com/)
+
+#add your firebase path
+Revise the path to your defaultFirebase account in the main.ts file
 
 # watches your files and uses livereload by default
 npm start
