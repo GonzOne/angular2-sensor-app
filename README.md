@@ -23,14 +23,14 @@ cd sensor-app
 npm install
 
 #add the slate styling
-Download the slate (http://bootswatch.com/slate/bootstrap.min.css) styling and replace the default
+Download the slate http://bootswatch.com/slate/bootstrap.min.css style and replace the default
 bootstrap version @ node_modules/bootstrap/dist/css folder.
 
 #create a Firebase account
-[Firebase](https://firebase.google.com/)
+https://firebase.google.com/ it's free!
 
-#add your firebase path
-Revise the path to your defaultFirebase account in the main.ts file
+#revise the firebase path
+Locate the defaultFirebase provider in the main.ts file and add your firebase path.
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
@@ -270,6 +270,8 @@ You may use this app to learn how to extend this seed for your own use cases..
 ├── typings.json
 └── appveyor.yml
 ```
+# TODO
+Set up tests for the services and components.
 
 # License
 
