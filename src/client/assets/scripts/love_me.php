@@ -15,7 +15,7 @@ if(empty($errors))
     $subject = htmlspecialchars($subject);
     $message = htmlspecialchars($message);
 
-	$to_email = 'design@stheory.com';
+	$to_email = 'put-your-email-address-here.com';
 	$to_email_cc = $from_email;
 
 	$contact = "<p><strong>Name:</strong> $from_name</p>
