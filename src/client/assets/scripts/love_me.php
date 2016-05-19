@@ -31,7 +31,7 @@ if(empty($errors))
 
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	$headers .= "From: $my_email\n";
+	$headers .= "From: $to_email\n";
 	$headers .= "Reply-To: $from_email";
 
 	mail($to_email,$email_subject,$email_body,$headers);
