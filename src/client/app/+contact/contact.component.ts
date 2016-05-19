@@ -75,8 +75,10 @@ export class ContactComponent implements OnActivate {
         console.log('handleEmailResponse ', response);
         switch(response) {
             case 'success':
-                let msg = 'Thank you for your message!';
+                let msg = 'Thank you. Your message has been sent!';
                 this.alerts.push({msg: msg, type: 'success', dismissible: true, dismissOnTimeout:3000});
+                this.createForm();
+                this.formSubmitted = false;
                 break;
             case 'error':
                 this.formError = true;
