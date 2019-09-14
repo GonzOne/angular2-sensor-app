@@ -1,3 +1,4 @@
+**Note** The SDK for firebase needs to be upgraded due to security vulnerabilities.
 # Introduction
 [CodingColor](http://www.codingcolor.com) IOT sensor app demo, built with Angular 2, Firebase and a [Linino One] (http://www.linino.org/portfolio/linino-one/).
 
